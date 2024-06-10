@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "react-router": "^6.23.1",
+    "react-router-dom": "^6.23.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -13,6 +15,19 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "react-scripts": "latest"
+    "react-scripts": "latest",
+    "tailwindcss": "^3.4.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
