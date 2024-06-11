@@ -1,34 +1,42 @@
 import React from "react";
-import { Route, Routes, Link } from "react-router-dom"
-import Home from "./Home";
-import Shop from "./Shop";
-import About from "./About";
-import Cart from "./Cart";
+import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartShopping, faBarsStaggered } from '@fortawesome/free-solid-svg-icons'
+import { useState } from "react";
 
 const Navbar = () => {
-    return (
-        <div>
-            <Routes>
-                <Route path="/" element={<Home />}/>
-                <Route path="/shop" element={<Shop />}/>
-                <Route path="/about" element={<About />}/>
-                <Route path="/cart" element={<Cart />}/>
-            </Routes>
-            <div className="py-12 border-b-[1px] border-[#3B3B3B] w-screen text-3xl">
 
-                <ul className="flex justify-around">
-                    <div className="flex gap-16">
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/shop">Shop</Link></li>
-                        <li><Link to="/about">About</Link></li>
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggle = () => {
+        setIsOpen(!isOpen)
+    }
+    return (
+        <>
+            <div className="flex justify-around items-stretch py-20 border-b-[2px] border-[#000] w-screen text-5xl">
+                <div className="flex list-none">
+                        <li className="lg:hidden"><FontAwesomeIcon icon={faBarsStaggered} onClick={toggle}/></li>
+                </div>
+                {!isOpen &&
+                    <div>
+                        <h3>LOGO</h3>
                     </div>
-                    <div className="flex">
-                        <li><Link to="/cart">Shopping</Link></li>
-                    </div>
+                }
+                {isOpen && <div>
+                    <ul className="flex justify-around font-semibold">
+                        <div className="flex gap-24">
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/shop">Shop</Link></li>
+                            <li><Link to="/about">About</Link></li>
+                        </div>
+                    </ul>
+                </div>}
+                <ul>
+                    <li><Link to="/cart"><FontAwesomeIcon icon={faCartShopping}/></Link></li>
                 </ul>
-            </div>
-        </div>
-    );
+            </div>  
+        </>
+    )
 }
 
 export default Navbar;
