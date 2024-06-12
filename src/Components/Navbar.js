@@ -8,32 +8,41 @@ const Navbar = () => {
 
     const [isOpen, setIsOpen] = useState(false);
 
-    const toggle = () => {
+    const navBarToggle = () => {
         setIsOpen(!isOpen)
     }
+
+    const shoppingCartToggle = () => {
+        if(isOpen == true){
+            setIsOpen(false)
+        }
+    }
+
     return (
         <>
-            <div className="flex justify-around items-stretch py-20 border-b-[2px] border-[#000] w-screen text-5xl">
+            <div className="flex justify-around items-stretch py-20 border-b-[2px] border-[#000] w-screen text-6xl sticky top-0 z-50 bg-[#FFF]">
                 <div className="flex list-none">
-                        <li className="lg:hidden"><FontAwesomeIcon icon={faBarsStaggered} onClick={toggle}/></li>
+                        <li className="lg:hidden"><FontAwesomeIcon icon={faBarsStaggered} onClick={navBarToggle}/></li>
                 </div>
                 {!isOpen &&
                     <div>
-                        <h3>LOGO</h3>
+                        <h3 className="font-semibold">LOGO</h3>
                     </div>
                 }
                 {isOpen && <div>
                     <ul className="flex justify-around font-semibold">
                         <div className="flex gap-24">
-                            <li><Link to="/">Home</Link></li>
-                            <li><Link to="/shop">Shop</Link></li>
-                            <li><Link to="/about">About</Link></li>
+                            <li><Link to="/" onClick={navBarToggle}>Home</Link></li>
+                            <li><Link to="/shop" onClick={navBarToggle}>Shop</Link></li>
+                            <li><Link to="/about" onClick={navBarToggle}>About</Link></li>
                         </div>
                     </ul>
                 </div>}
+                {!isOpen &&
                 <ul>
-                    <li><Link to="/cart"><FontAwesomeIcon icon={faCartShopping}/></Link></li>
+                    <li><Link to="/cart" onClick={shoppingCartToggle}><FontAwesomeIcon icon={faCartShopping}/></Link></li>
                 </ul>
+                }
             </div>  
         </>
     )
