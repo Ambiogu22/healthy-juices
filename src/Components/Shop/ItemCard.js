@@ -1,8 +1,14 @@
 import React from "react";
+import { CartContext } from "./ShopContext";
+import { useContext } from "react";
+
 
 const ItemCard = (props) => {
 
     const item = props.item;
+
+    const items = useContext(CartContext);
+
 
     return (
         <>
