@@ -2,18 +2,18 @@ import React from "react";
 
 const itemsArray = [
     {
-        id:1,
+        id: "1",
         image:"https://cdn-icons-png.flaticon.com/512/71/71879.png",
         title:"Green Juice",
         description: "Our aim is to seamlessly integrate into your daily routine, offering time-saving solutions while prioritizing your well-being. Our products are designed to combat inflammation, detoxify, and cleanse your body and skin, ensuring you feel rejuvenated and refreshed each day",
-        price: "19.99"
+        price: 19.99
     },
     {
-        id:2,
+        id: "2",
         image:"https://cdn-icons-png.flaticon.com/512/71/71879.png",
         title:"Orange Juice",
         description: "Our aim is to seamlessly integrate into your daily routine, offering time-saving solutions while prioritizing your well-being. Our products are designed to combat inflammation, detoxify, and cleanse your body and skin, ensuring you feel rejuvenated and refreshed each day",
-        price: "199.99"
+        price: 199.99
     }
 ]
 
