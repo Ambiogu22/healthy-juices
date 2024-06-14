@@ -1,7 +1,6 @@
 import React from "react";
-import { CartContext } from "./ShopContext";
-import { useContext } from "react";
-
+import {useContext} from "react";
+import {CartContext} from "./ShopContext";
 
 const ItemCard = (props) => {
 
@@ -19,7 +18,7 @@ const ItemCard = (props) => {
                     <h2 className="text-3xl text-[#6B6B6B]">Week</h2>
                 </div>
                 <div className="flex justify-center items-center">
-                    <button className="text-4xl font-semibold py-6 px-12 border-2 border-[#000] rounded-full" onClick={()=>cart.addItem(item.id)}>ADD TO CART</button>
+                    <button className="text-4xl font-semibold py-6 px-12 border-2 border-[#000] rounded-full" onClick={()=> {cart.addItem(item.id)}}>ADD TO CART</button>
                 </div>
             </div>           
         </>

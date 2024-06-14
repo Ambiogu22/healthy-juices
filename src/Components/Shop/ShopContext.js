@@ -8,7 +8,8 @@ export const CartContext = createContext({
     addItem: () => {},
     subtractItem: () => {},
     removeItem: () => {},
-    getTotalCost: () => {}
+    getTotalCost: () => {},
+    getTotalItems: () => {}
 });
 
 export const AppProvider = ({children}) => {
@@ -27,7 +28,7 @@ export const AppProvider = ({children}) => {
 
     const addItem = (id) => {
 
-        const qty = getItemQty(id);
+        const qty = getItemQty(id)
 
         if ( qty === 0) { //Item not in cart
             setItemsList([...itemsList, {
@@ -35,12 +36,7 @@ export const AppProvider = ({children}) => {
                 qty: 1
             }])
         }else{ //Item in the cart
-            setItemsList(itemsList.map(
-                item =>
-                item.id === id 
-                ? { ...item, qty: item.qty + 1 }
-                : item
-            ))
+            setItemsList(itemsList.map(item => item.id === id ? { ...item, qty: item.qty + 1} : item))
         }
 
     }
@@ -48,15 +44,10 @@ export const AppProvider = ({children}) => {
     const subtractItem = (id) => {
         const qty = getItemQty(id)
 
-        if (qty == 0){
+        if (qty === 1){
             removeItem(id)
         }else{
-            setItemsList(itemsList.map(
-                item =>
-                item.id === id 
-                ? { ...item, qty: item.qty - 1 }
-                : item
-            ))
+            setItemsList(itemsList.map(item => item.id === id ? { ...item, qty: item.qty - 1} : item))
         }
     }
 
@@ -78,6 +69,14 @@ export const AppProvider = ({children}) => {
 
     }
 
+    const getTotalItems = () => {
+        let totalItems = 0;
+
+        itemsList.map((i)=>{
+            
+        })
+    } 
+
     //define everything above
 
     const contextValues = {
@@ -86,7 +85,8 @@ export const AppProvider = ({children}) => {
         addItem,
         subtractItem,
         removeItem,
-        getTotalCost
+        getTotalCost,
+        getTotalItems
     }
 
     return (

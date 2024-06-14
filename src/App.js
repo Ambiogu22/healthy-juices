@@ -4,14 +4,14 @@ import { Route, Routes } from "react-router-dom"
 import Home from "./Components/Home/Home";
 import Shop from "./Components/Shop/Shop";
 import About from "./Components/About";
-import Cart from "./Components/Cart";
+import Cart from "./Components/Shop/Cart";
 import Navbar from "./Components/Navbar";
-import CartContext from "./Components/Shop/ShopContext";
+import { AppProvider } from "./Components/Shop/ShopContext";
 
 export default function App() {
   return (
     <div>
-        <CartContext>
+        <AppProvider>
             <Navbar />
             <Routes>
               <Route path="/" element={<Home />}/>
@@ -19,7 +19,7 @@ export default function App() {
               <Route path="/about" element={<About />}/>
               <Route path="/cart" element={<Cart />}/>
             </Routes>
-          </CartContext>
+        </AppProvider>
     </div>
   );
 }
