@@ -1,0 +1,11 @@
+ItemsInCart true ? change qty of item on cart from shop or remove, just like from shop : ADD TO cart
+
+Add buton "SHOP" Below "Your cart is empty"
+
+Add Total qty of items below the total price on Cart 
+
+Add the ItemPrice below the name of the item in the cart
+
+Add Red Juice
+
+Add real images from Pressed.com to give it a better look
