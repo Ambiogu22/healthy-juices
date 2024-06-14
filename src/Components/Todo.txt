@@ -1,4 +1,4 @@
-ItemsInCart true ? change qty of item on cart from shop or remove, just like from shop : ADD TO cart
+Shop.js: ItemInCart true ? Can change qty of item on cart from shop or remove, just like you can do it on the cart : ADD TO cart
 
 Add buton "SHOP" Below "Your cart is empty"
 
