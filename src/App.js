@@ -6,12 +6,12 @@ import Shop from "./Components/Shop/Shop";
 import About from "./Components/About";
 import Cart from "./Components/Cart";
 import Navbar from "./Components/Navbar";
-import { CartContext } from "./Components/Shop/ShopContext";
+import CartContext from "./Components/Shop/ShopContext";
 
 export default function App() {
   return (
     <div>
-        <CartContext.Provider>
+        <CartContext>
             <Navbar />
             <Routes>
               <Route path="/" element={<Home />}/>
@@ -19,7 +19,7 @@ export default function App() {
               <Route path="/about" element={<About />}/>
               <Route path="/cart" element={<Cart />}/>
             </Routes>
-          </CartContext.Provider>
+          </CartContext>
     </div>
   );
 }

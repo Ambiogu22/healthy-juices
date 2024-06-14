@@ -9,17 +9,17 @@ export const CartContext = createContext({
     subtractItem: () => {},
     removeItem: () => {},
     getTotalCost: () => {}
-})
+});
 
 export const AppProvider = ({children}) => {
 
-    const [itemsList, setItemsList] = useState([])
+    const [itemsList, setItemsList] = useState([]);
 
     const getItemQty = (id) => {
-        const qty = itemsList.find(item => item.id === id)?.qty
+        const qty = itemsList.find(item => item.id === id)?.qty;
 
         if (qty === undefined){
-            qty = 0
+            return 0;
         }
 
         return qty;
@@ -27,17 +27,20 @@ export const AppProvider = ({children}) => {
 
     const addItem = (id) => {
 
-        const qty = getItemQty(id)
+        const qty = getItemQty(id);
 
-        if ( qty == 0) { //Item not in cart
+        if ( qty === 0) { //Item not in cart
             setItemsList([...itemsList, {
                 id: id,
                 qty: 1
             }])
         }else{ //Item in the cart
-            setItemsList(itemsList.map((item)=>{
-                item.id === id ? {...item, qty: item.qty + 1} : item
-            }))
+            setItemsList(itemsList.map(
+                item =>
+                item.id === id 
+                ? { ...item, qty: item.qty + 1 }
+                : item
+            ))
         }
 
     }
@@ -48,9 +51,12 @@ export const AppProvider = ({children}) => {
         if (qty == 0){
             removeItem(id)
         }else{
-            setItemsList(itemsList.map((item)=>{
-                item.id === id ? {...item, qty: item.qty - 1} : item
-            }))
+            setItemsList(itemsList.map(
+                item =>
+                item.id === id 
+                ? { ...item, qty: item.qty - 1 }
+                : item
+            ))
         }
     }
 
@@ -90,4 +96,4 @@ export const AppProvider = ({children}) => {
     )
 }
 
-export default ShopContext;
+export default AppProvider;

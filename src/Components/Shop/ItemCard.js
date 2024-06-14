@@ -7,8 +7,7 @@ const ItemCard = (props) => {
 
     const item = props.item;
 
-    const items = useContext(CartContext);
-
+    const cart = useContext(CartContext);
 
     return (
         <>
@@ -20,7 +19,7 @@ const ItemCard = (props) => {
                     <h2 className="text-3xl text-[#6B6B6B]">Week</h2>
                 </div>
                 <div className="flex justify-center items-center">
-                    <button className="text-4xl font-semibold py-6 px-12 border-2 border-[#000] rounded-full">ADD TO CART</button>
+                    <button className="text-4xl font-semibold py-6 px-12 border-2 border-[#000] rounded-full" onClick={()=>cart.addItem(item.id)}>ADD TO CART</button>
                 </div>
             </div>           
         </>
