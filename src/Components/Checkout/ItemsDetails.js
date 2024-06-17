@@ -1,38 +1,31 @@
 import React from "react";
-import CartItemCard from "./CartItemCard";
+import CheckoutItemCard from "./CheckoutItemCard";
 import { useContext } from "react";
-import { CartContext } from "./ShopContext";
+import { CartContext } from "../Shop/ShopContext";
 import { Link } from "react-router-dom";
 
-const Cart = () => {
+const ItemsDetails = () => {
 
     const cart = useContext(CartContext);
 
-    console.log(cart.items)
-
     let itemsInCart = cart.items;
 
-    const totalCost = cart.getTotalCost();
-
     return (
-        <div className="flex flex-col mx-16">
+        <div className="mb-24 p-8">
             <div className="flex flex-col gap-6 mb-32">
-                <h2 className="mt-32 text-7xl font-semibold">Shopping Cart</h2>
-                <h2 className="text-5xl">Subtotal (#items): {totalCost}</h2>
+                <h2 className="text-5xl font-semibold mb-8">2- Review Items:</h2>
             </div>
             <div className="flex flex-col gap-12 justify-between items-center">
                 {itemsInCart.length >= 1 ?
                     
-                    <div className="flex flex-col justify-center items-center">
-                    <button className="mb-16 text-4xl font-semibold bg-[#69909F] border-[4px] border-[#426471] text-[#FFF]  py-[20px] px-[50px] rounded-2xl"><Link to="/checkout">Proceed to checkout</Link></button>
+                    <div className="flex flex-col">
                     {
                     itemsInCart.map((item, idx)=>(
                             <div key={idx}>
-                                <CartItemCard item={item}/>
+                                <CheckoutItemCard item={item}/>
                             </div>
                         ))
                     }
-                    <button className="mb-16 text-4xl font-semibold bg-[#69909F] border-[4px] border-[#426471] text-[#FFF]  py-[20px] px-[50px] rounded-2xl"><Link to="/shop">Shop more items</Link></button>
                     </div>
                 :
                 <div className="flex flex-col gap-24 items-center">
@@ -44,4 +37,4 @@ const Cart = () => {
     );
 }
 
-export default Cart;
+export default ItemsDetails;

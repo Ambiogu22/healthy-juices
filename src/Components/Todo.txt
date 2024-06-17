@@ -1,6 +1,6 @@
-Shop.js: ItemInCart true ? Can change qty of item on cart from shop or remove, just like you can do it on the cart : ADD TO cart
+Checkout: Checkout (#items) on top, Order summary: Items(#items): $totalcost, Shipping and handling: $$, Order total: $$, 1- Shipping address, 3 Review items, 4- payment.
 
-Add buton "SHOP" Below "Your cart is empty"
+Add Red Juice in Items, Home and Shop
 
 Add Total qty of items below the total price on Cart 
 
@@ -9,3 +9,5 @@ Add the ItemPrice below the name of the item in the cart
 Add Red Juice
 
 Add real images from Pressed.com to give it a better look
+
+Shop.js: ItemInCart true ? Can change qty of item on cart from shop or remove, just like you can do it on the cart : ADD TO cart
