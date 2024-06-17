@@ -17,6 +17,12 @@ const Home = () => {
             image="https://media.istockphoto.com/id/461122149/photo/glass-of-fresh-fruit-and-vegetable-juice.jpg?s=2048x2048&w=is&k=20&c=Y6ER_O02EYNbCN4KMdAAEx2OEIfcQRZhlPWlMk3saNs="
             imgAlt="Orange Juice Image"
             />
+            <Juice 
+            juiceName="Red Juice"
+            juiceDescription="This substance is a powerful antioxidant and a source of vitamin C, fiber, and potassium. It also provides magnesium, phosphorus, and a small amount of calcium. Additionally, it helps normalize high blood cholesterol levels."
+            image="https://media.istockphoto.com/id/461122149/photo/glass-of-fresh-fruit-and-vegetable-juice.jpg?s=2048x2048&w=is&k=20&c=Y6ER_O02EYNbCN4KMdAAEx2OEIfcQRZhlPWlMk3saNs="
+            imgAlt="Orange Juice Image"
+            />
         </div>
         
     );

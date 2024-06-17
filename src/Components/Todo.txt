@@ -1,12 +1,6 @@
-Checkout: Checkout (#items) on top, Order summary: Items(#items): $totalcost, Shipping and handling: $$, Order total: $$, 1- Shipping address, 3 Review items, 4- payment.
-
-Add Red Juice in Items, Home and Shop
-
-Add Total qty of items below the total price on Cart 
-
 Add the ItemPrice below the name of the item in the cart
 
-Add Red Juice
+Add Total qty of items where nedeed
 
 Add real images from Pressed.com to give it a better look
 
