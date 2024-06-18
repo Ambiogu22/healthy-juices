@@ -72,10 +72,13 @@ export const AppProvider = ({children}) => {
     const getTotalItems = () => {
         let totalItems = 0;
 
-        itemsList.map((i)=>{
-            
-        })
-    } 
+        itemsList.map((cartItem) => {
+            totalItems += cartItem.qty
+        });
+
+        return totalItems;
+    }
+
 
     //define everything above
 

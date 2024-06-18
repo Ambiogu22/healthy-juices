@@ -2,13 +2,20 @@ import react from "react";
 import { CartContext } from "../Shop/ShopContext";
 import { useContext } from "react";
 
-const OrderSummary = () => {
+const OrderSummary = (props) => {
+
+    const item = props.item;
 
     const cart = useContext(CartContext);
 
-    const itemsCost = cart.getTotalCost();
+    const itemsCost = Number((cart.getTotalCost()).toFixed(2));
 
-    const totalCost = itemsCost + 4.99;
+    const totalCost = Number((itemsCost + 4.99).toFixed(2));
+
+    const getItemQty = cart.getItemQty(item.id)
+
+    const itemsInCart = cart.getTotalItems();
+
 
     return (
         <>
@@ -16,7 +23,7 @@ const OrderSummary = () => {
                 <h2 className="text-5xl font-semibold">Order Summary</h2>
                 <div className="flex flex-col py-16 px-8 gap-12">
                     <div className="flex justify-between">
-                        <h2 className="text-4xl">Items (#Items):</h2>
+                        <h2 className="text-4xl">Items ({itemsInCart} Items):</h2>
                         <h2 className="text-4xl">${itemsCost}</h2>
                     </div>
                     <div className="flex justify-between">
