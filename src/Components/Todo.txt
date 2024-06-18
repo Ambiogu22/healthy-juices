@@ -1,5 +1,3 @@
-Add Total qty of items where nedeed
-
-Add real images from Pressed.com to give it a better look
+Add real images and style from Pressed.com to give it a better look
 
 Shop.js: ItemInCart true ? Can change qty of item on cart from shop or remove, just like you can do it on the cart : ADD TO cart
