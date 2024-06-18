@@ -18,7 +18,7 @@ const Cart = () => {
         <div className="flex flex-col mx-16">
             <div className="flex flex-col gap-6 mb-32">
                 <h2 className="mt-32 text-7xl font-semibold">Shopping Cart</h2>
-                <h2 className="text-5xl">Subtotal ({cart.getTotalItems()} Items): {totalCost}</h2>
+                <h2 className="text-5xl">Subtotal ({cart.getTotalItems()} Items): ${totalCost}</h2>
             </div>
             <div className="flex flex-col gap-12 justify-between items-center">
                 {itemsInCart.length >= 1 ?

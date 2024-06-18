@@ -26,7 +26,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="flex justify-around items-stretch py-20 border-b-[2px] border-[#000] w-screen text-6xl sticky top-0 z-50 bg-[#FFF]">
+            <div className="flex justify-around items-stretch py-20 border-b-[2px] border-[#000] w-screen text-5xl sticky top-0 z-50 bg-[#FFF]">
                 <div className="flex list-none">
                         <li className="lg:hidden"><FontAwesomeIcon icon={faBarsStaggered} onClick={navBarToggle}/></li>
                 </div>
@@ -48,7 +48,7 @@ const Navbar = () => {
                 <ul>
                     <div className="relative">
                         {itemsInCart >= 1 &&
-                            <h2 className="absolute text-[#FFF] bg-[#FF0000] rounded-full text-[30px] px-[14px] py-[6px] font-bold right-[-20px] top-[-20px]">{itemsInCart}</h2>
+                            <h2 className="absolute text-[#FFF] bg-[#B01818] rounded-full text-[30px] px-[14px] py-[6px] font-bold right-[-20px] top-[-20px]">{itemsInCart}</h2>
                         }
                         <li><Link to="/cart" onClick={shoppingCartToggle}><FontAwesomeIcon icon={faCartShopping}/></Link></li>
                     </div>
