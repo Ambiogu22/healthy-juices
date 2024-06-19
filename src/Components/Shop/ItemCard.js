@@ -15,7 +15,7 @@ const ItemCard = (props) => {
                 {item.new &&
                     <h2 className="absolute text-[#FFF] bg-[#000] rounded-full text-[30px] px-[12px] py-[16px] font-bold left-[20px] top-[20px] text-center">new</h2>
                 }
-                <Link to="/" className="flex flex-col gap-8 items-center">
+                <Link to='/' className="flex flex-col gap-8 items-center">
                     <img src={item.image} alt={item.imgAlt} className="w-48"/>
                     
                     <h2 className="text-[42px] font-semibold">{item.title}</h2>

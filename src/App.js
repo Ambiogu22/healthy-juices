@@ -8,6 +8,7 @@ import Cart from "./Components/Shop/Cart";
 import Navbar from "./Components/Navbar";
 import Checkout from "./Components/Checkout/Checkout";
 import { AppProvider } from "./Components/Shop/ShopContext";
+import ShopItems from "./Components/Items/ShopItems";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
             <Routes>
               <Route path="/" element={<Home />}/>
               <Route path="/shop" element={<Shop />}/>
+              <Route path="/shop/items" element={<ShopItems />}/>
               <Route path="/about" element={<About />}/>
               <Route path="/cart" element={<Cart />}/>
               <Route path="/checkout" element={<Checkout />}/>

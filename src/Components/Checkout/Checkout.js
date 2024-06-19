@@ -22,7 +22,6 @@ const Checkout = () => {
             </div>
             <div className="flex flex-col gap-12 justify-between items-center">
                     {itemsInCart.length >= 1 ?
-                        
                         <div className="flex flex-col">
                         <OrderSummary item/>
                         <ShippingForm />
