@@ -14,7 +14,7 @@ const CartItemCard = (props) => {
     const getItemQty = cart.getItemQty(item.id)
 
     return (
-        <div className="pb-6 mb-20 bg-[#F9F7F1] flex items-end relative">
+        <div className="pb-6  bg-[#F9F7F1] flex items-end relative">
             <div className="flex flex-row gap-12 items-center  p-8 rounded-2xl py-10 px-14">
                 <img src={items.image} alt={items.imgAlt} className="w-24"/>
                 <div className="flex flex-col items-start">
