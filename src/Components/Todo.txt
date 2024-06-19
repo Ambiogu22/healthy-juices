@@ -1,8 +1,9 @@
--DONE Change the look for the Shop, make cards smaller, Ex: https://pressed.com/shop
-
--Create Item Folder, (Item name) component: This is for then a user click on the Item it will go to a complete description of the item
-containing all information, benefits, ingridients, etc. (LOOK AT THE URL, Item name at the end, you want it? Go and watch the Video 
+-Create Item Folder, (Item name) component: This is for when a user click on the Item it will go to a complete description of the item
+containing all information, benefits, ingridients, etc. (LOOK AT THE URL, Item name at the end of url, you want it? Go and watch the Video 
 tutoral and see how he does it) https://pressed.com/products/kale-apple-lemon-juice
+
+-Create new items: "Packs" (5 days pack, 7 day pack?)
+Make packs cheaper than single item?
 
 -Add real images and style from Pressed.com to give it a better look
 
