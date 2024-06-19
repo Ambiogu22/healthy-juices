@@ -1,6 +1,6 @@
--Change the look for the Shop, make cards smaller, Ex: https://pressed.com/shop
+-Fixed the "Proceed to checkout" btn in Cart
 
--Move the "Proceed to ckeckout" btn to the botom and make it fixed?
+-Change the look for the Shop, make cards smaller, Ex: https://pressed.com/shop
 
 -Create Item Folder, (Item name) component: This is for then a user click on the Item it will go to a complete description of the item
 containing all information, benefits, ingridients, etc. (LOOK AT THE URL, Item name at the end, you want it? Go and watch the Video 

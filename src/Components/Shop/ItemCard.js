@@ -10,7 +10,7 @@ const ItemCard = (props) => {
 
     return (
         <>
-            <div className="flex flex-col gap-12 items-center bg-[#F9F7F1] p-8 rounded-2xl py-24 px-24 mb-24">
+            <div className="flex flex-col gap-12 items-center bg-[#F9F7F1] rounded-2xl py-14 px-14">
                 <img src={item.image} alt={item.imgAlt} className="w-56"/>
                 <h2 className="text-5xl font-semibold">{item.title}</h2>
                 <div className="flex flex-col gap-4 items-center">

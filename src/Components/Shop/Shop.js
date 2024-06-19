@@ -6,7 +6,7 @@ const Shop = () => {
 
     return (
         <div className="flex flex-col mx-16">
-            <h2 className="mt-32 pb-32 text-7xl font-semibold">Healthy Juices</h2>
+            <h2 className="mt-32 pb-32 text-6xl font-semibold">Healthy Juices</h2>
             <div className="flex flex-col gap-12 justify-between items-center">
                 {
                 itemsArray.map((item, idx)=>(

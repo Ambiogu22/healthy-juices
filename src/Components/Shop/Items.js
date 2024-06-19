@@ -21,6 +21,20 @@ const itemsArray = [
         title:"Red Juice",
         description: "Our aim is to seamlessly integrate into your daily routine, offering time-saving solutions while prioritizing your well-being. Our products are designed to combat inflammation, detoxify, and cleanse your body and skin, ensuring you feel rejuvenated and refreshed each day",
         price: 4.99
+    },
+    {
+        id: "4",
+        image:"https://cdn-icons-png.flaticon.com/512/71/71879.png",
+        title:"Purple Juice",
+        description: "Our aim is to seamlessly integrate into your daily routine, offering time-saving solutions while prioritizing your well-being. Our products are designed to combat inflammation, detoxify, and cleanse your body and skin, ensuring you feel rejuvenated and refreshed each day",
+        price: 4.99
+    },
+    {
+        id: "5",
+        image:"https://cdn-icons-png.flaticon.com/512/71/71879.png",
+        title:"Blue Juice",
+        description: "Our aim is to seamlessly integrate into your daily routine, offering time-saving solutions while prioritizing your well-being. Our products are designed to combat inflammation, detoxify, and cleanse your body and skin, ensuring you feel rejuvenated and refreshed each day",
+        price: 4.99
     }
 ]
 

@@ -23,21 +23,24 @@ const Cart = () => {
             <div className="flex flex-col gap-12 justify-between items-center">
                 {itemsInCart.length >= 1 ?
                     
-                    <div className="flex flex-col justify-center items-center">
-                    <button className="mb-16 text-4xl font-semibold bg-[#69909F] border-[4px] border-[#426471] text-[#FFF]  py-[20px] px-[50px] rounded-2xl"><Link to="/checkout">Proceed to checkout</Link></button>
-                    {
-                    itemsInCart.map((item, idx)=>(
-                            <div key={idx}>
-                                <CartItemCard item={item}/>
-                            </div>
-                        ))
-                    }
-                    <button className="mb-16 text-4xl font-semibold bg-[#69909F] border-[4px] border-[#426471] text-[#FFF]  py-[20px] px-[50px] rounded-2xl"><Link to="/shop">Shop more items</Link></button>
+                    <div className="relative flex flex-col justify-center items-center">
+                        <button className="mb-16 text-4xl font-semibold bg-[#69909F] border-[4px] border-[#426471] text-[#FFF]  py-[20px] px-[50px] rounded-2xl"><Link to="/shop">Shop more items</Link></button>
+
+                        {
+                        itemsInCart.map((item, idx)=>(
+                                <div key={idx}>
+                                    <CartItemCard item={item}/>
+                                </div>
+                            ))
+                        }
+                        <div className="bg-[#F6EFEF] w-screen bottom-0 p-32 flex justify-center fixed border-t-4 border-[#000]">
+                            <button className="text-4xl font-semibold bg-[#000] border-[4px] border-[#426471] text-[#FFF] py-[30px] px-[50px] rounded-2xl"><Link to="/checkout">Proceed to checkout</Link></button>
+                        </div>
                     </div>
                 :
                 <div className="flex flex-col gap-24 items-center">
                     <h2 className="text-7xl">Your Cart Is Empty</h2>
-                    <button className="text-4xl font-semibold bg-[#69909F] border-[4px] border-[#426471] text-[#FFF]  py-[20px] px-[50px] rounded-2xl"><Link to="/shop">SHOP</Link></button>
+                    <button className="text-4xl font-semibold bg-[#69909F] border-[4px] border-[#426471] text-[#FFF] py-[20px] px-[50px] rounded-2xl"><Link to="/shop">SHOP</Link></button>
                 </div>}
             </div>
         </div>
