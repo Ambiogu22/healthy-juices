@@ -12,6 +12,7 @@ const ShopItems = () => {
                             juiceDescription="Green Juice 3 is a blend of apple, lemon, ginger and beet. It is our most popular Roots juice made with the goodness of beets, sweetness of apples and all the spice from ginger." 
                             image="https://cdn-icons-png.flaticon.com/512/71/71879.png"
                             imgAlt="Green Juice Image"
+                            price="4.99"
                         />
                 </div>
             </div>
