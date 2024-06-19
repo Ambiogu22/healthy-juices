@@ -26,7 +26,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="flex justify-around items-stretch py-20 border-b-[2px] border-[#000] w-screen text-5xl sticky top-0 z-50 bg-[#FFF]">
+            <div className="flex justify-around items-stretch py-20 shadow-[0px_-2px_20px_0px] shadow-[#000] w-screen text-5xl sticky top-0 z-50 bg-[#FFF]">
                 <div className="flex list-none">
                         <li className="lg:hidden"><FontAwesomeIcon icon={faBarsStaggered} onClick={navBarToggle}/></li>
                 </div>

@@ -27,13 +27,13 @@ const Checkout = () => {
                         <OrderSummary item/>
                         <ShippingForm />
                         <ItemsDetails />
-                        <button className="mb-16 text-4xl font-semibold bg-[#69909F] border-[4px] border-[#426471] text-[#FFF]  py-[20px] px-[50px] rounded-2xl"><Link to="/shop">Shop more items</Link></button>
-                        <button className="mb-16 text-4xl font-semibold bg-[#69909F] border-[4px] border-[#426471] text-[#FFF]  py-[20px] px-[50px] rounded-2xl"><Link to="/home">Place Order</Link></button>
+                        <button className="mb-16 text-4xl font-semibold bg-[#000] text-[#FFF]  py-[20px] px-[50px] rounded-2xl"><Link to="/shop">Shop more items</Link></button>
+                        <button className="mb-16 text-4xl font-semibold bg-[#000] text-[#FFF]  py-[20px] px-[50px] rounded-2xl"><Link to="/">Place Order</Link></button>
                         </div>
                     :
                     <div className="flex flex-col gap-24 items-center">
                         <h2 className="text-7xl">Your Cart Is Empty</h2>
-                        <button className="text-4xl font-semibold bg-[#69909F] border-[4px] border-[#426471] text-[#FFF]  py-[20px] px-[50px] rounded-2xl"><Link to="/shop">SHOP</Link></button>
+                        <button className="text-4xl font-semibold bg-[#000] text-[#FFF]  py-[20px] px-[50px] rounded-2xl"><Link to="/shop">SHOP</Link></button>
                     </div>}
             </div>
         </div>

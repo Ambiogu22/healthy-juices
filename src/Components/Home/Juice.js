@@ -9,7 +9,7 @@ const Juice = (props) => {
                 <div className="flex flex-col gap-24 px-20 items-center">
                     <h2 className="text-7xl font-semibold text-[#555555] font-mono">{props.juiceName}</h2>
                     <p className="text-[48px] text-center font-semibold">{props.juiceDescription}</p>
-                    <button className="text-5xl font-semibold bg-[#69909F] border-[4px] border-[#426471] text-[#FFF] W-fit py-[28px] px-[62px] rounded-2xl"><Link to="/shop">SHOP</Link></button>
+                    <button className="text-5xl font-semibold bg-[#000] text-[#FFF] W-fit py-[28px] px-[62px] rounded-2xl"><Link to="/shop">SHOP</Link></button>
                 </div>
             </div>
         </div>
