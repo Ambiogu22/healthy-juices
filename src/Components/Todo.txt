@@ -1,11 +1,3 @@
--Finish the Items component where is all the info of the item, 
-the goal is to have it ready to incorporate it later in the project
-/shop/items
-
--Create Item Folder, (Item name) component: This is for when a user click on the Item it will go to a complete description of the item
-containing all information, benefits, ingridients, etc. (LOOK AT THE URL, Item name at the end of url, you want it? Go and watch the Video 
-tutoral and see how he does it) https://pressed.com/products/kale-apple-lemon-juice
-
 -Create new items: "Packs" (5 days pack, 7 day pack?)
 Make packs cheaper than single item?
 
@@ -16,3 +8,9 @@ Make packs cheaper than single item?
 -Add About component
 
 -Add 404 component
+
+-Create Footer component
+
+-Create Item Folder, (Item name) component: This is for when a user click on the Item it will go to a complete description of the item
+containing all information, benefits, ingridients, etc. (LOOK AT THE URL, Item name at the end of url, you want it? Go and watch the Video 
+tutoral and see how he does it) https://pressed.com/products/kale-apple-lemon-juice

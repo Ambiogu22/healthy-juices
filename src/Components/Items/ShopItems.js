@@ -4,8 +4,7 @@ import Items from "./Items";
 const ShopItems = () => {
     return (
         <>
-            <div className="flex flex-col mx-16">
-                <h2 className="mt-32 pb-32 text-6xl font-semibold flex items-center justify-center">Healthy Juices</h2>
+            <div className="flex flex-col mx-16 mt-40">
                 <div className="flex flex-wrap gap-16 justify-center items-center">
                         <Items
                             juiceName="Green Juice" 
@@ -13,6 +12,7 @@ const ShopItems = () => {
                             image="https://cdn-icons-png.flaticon.com/512/71/71879.png"
                             imgAlt="Green Juice Image"
                             price="4.99"
+                            id="1"
                         />
                 </div>
             </div>
