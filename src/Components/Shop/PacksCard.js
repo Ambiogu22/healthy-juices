@@ -3,7 +3,7 @@ import {useContext} from "react";
 import {CartContext} from "./ShopContext";
 import { Link } from "react-router-dom";
 
-const ItemCard = (props) => {
+const PacksCard = (props) => {
 
     const item = props.item;
 
@@ -12,20 +12,19 @@ const ItemCard = (props) => {
     const productQty = cart.getItemQty(item.id)
 
     return (
-        <>
-            <div className="relative flex flex-wrap flex-col gap-8 items-center bg-[#F9F7F1] rounded-2xl py-24 px-[50px]">
+        <>{item.pack &&
+            <div className="relative flex flex-wrap flex-col gap-8 items-center bg-[#F9F7F1] rounded-2xl py-16 px-16">
                 {item.new &&
                     <h2 className="absolute text-[#FFF] bg-[#000] rounded-full text-[30px] px-[12px] py-[16px] font-bold left-[20px] top-[20px] text-center">new</h2>
                 }
-                <Link to='/shop/items' className="flex flex-col gap-8 items-center">
+                <Link to='/' className="flex flex-col gap-8 items-center">
                     <img src={item.image} alt={item.imgAlt} className="w-48"/>
-                    <h2 className="text-[42px] w-80 font-semibold text-center">{item.title}</h2>
+                    <h2 className="text-[42px] w-72 font-semibold text-center">{item.title}</h2>
                     <div className="flex flex-col gap-4 items-center">
                         <h2 className="text-5xl font-medium">${item.price}</h2>
                         <h2 className="text-4xl text-[#6B6B6B]">Week</h2>
                     </div>
                 </Link>
-
                 {productQty > 0 
                     ?
                     <div className="flex justify-center items-center">
@@ -39,8 +38,9 @@ const ItemCard = (props) => {
                     </div> 
                 }
             </div>  
+            }
         </>
     )
 }
 
-export default ItemCard;
+export default PacksCard;

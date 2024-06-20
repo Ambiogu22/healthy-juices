@@ -3,43 +3,48 @@ import React from "react";
 const itemsArray = [
     {
         id: "1",
-        image:"https://cdn-icons-png.flaticon.com/512/71/71879.png",
+        image:"https://dsznjaxrxc1vh.cloudfront.net/product-images/large/greens2.png",
         title:"Green Juice",
         description: "Our aim is to seamlessly integrate into your daily routine, offering time-saving solutions while prioritizing your well-being. Our products are designed to combat inflammation, detoxify, and cleanse your body and skin, ensuring you feel rejuvenated and refreshed each day",
-        price: 4.99,
-        new: true
+        price: 5.99,
+        new: false,
+        pack: false
     },
     {
         id: "2",
-        image:"https://cdn-icons-png.flaticon.com/512/71/71879.png",
+        image:"https://dsznjaxrxc1vh.cloudfront.net/product-images/large/strawberry-orange-mango-pride.png",
         title:"Orange Juice",
         description: "Our aim is to seamlessly integrate into your daily routine, offering time-saving solutions while prioritizing your well-being. Our products are designed to combat inflammation, detoxify, and cleanse your body and skin, ensuring you feel rejuvenated and refreshed each day",
-        price: 4.99,
-        new: true
+        price: 5.99,
+        new: false,
+        pack: false
     },
     {
         id: "3",
-        image:"https://cdn-icons-png.flaticon.com/512/71/71879.png",
+        image:"https://dsznjaxrxc1vh.cloudfront.net/product-images/large/strawberry-basil.png",
         title:"Red Juice",
         description: "Our aim is to seamlessly integrate into your daily routine, offering time-saving solutions while prioritizing your well-being. Our products are designed to combat inflammation, detoxify, and cleanse your body and skin, ensuring you feel rejuvenated and refreshed each day",
-        price: 4.99,
-        new: true
+        price: 5.99,
+        new: false,
+        pack: false
     },
     {
         id: "4",
-        image:"https://cdn-icons-png.flaticon.com/512/71/71879.png",
+        image:"https://dsznjaxrxc1vh.cloudfront.net/product-images/large/roots3.png",
         title:"Purple Juice",
         description: "Our aim is to seamlessly integrate into your daily routine, offering time-saving solutions while prioritizing your well-being. Our products are designed to combat inflammation, detoxify, and cleanse your body and skin, ensuring you feel rejuvenated and refreshed each day",
-        price: 4.99,
-        new: false
+        price: 5.99,
+        new: true,
+        pack: false
     },
     {
-        id: "5",
-        image:"https://cdn-icons-png.flaticon.com/512/71/71879.png",
-        title:"Blue Juice",
+        id: "6",
+        image:"https://dsznjaxrxc1vh.cloudfront.net/product-images/large/cleanse-1-new-roots.png",
+        title:"5-Day Healthy",
         description: "Our aim is to seamlessly integrate into your daily routine, offering time-saving solutions while prioritizing your well-being. Our products are designed to combat inflammation, detoxify, and cleanse your body and skin, ensuring you feel rejuvenated and refreshed each day",
-        price: 4.99,
-        new: false
+        price: 24.99,
+        new: true,
+        pack: true
     }
 ]
 

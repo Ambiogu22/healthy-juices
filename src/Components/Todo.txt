@@ -1,8 +1,3 @@
--Create new items: "Packs" (5 days pack, 7 day pack?)
-Make packs cheaper than single item?
-
--Create a filter btn which show options: Single items, Packs, etc
-
 -Add real images and style from Pressed.com to give it a better look
 
 -Add About component
