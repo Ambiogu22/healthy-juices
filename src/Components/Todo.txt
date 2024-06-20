@@ -1,9 +1,3 @@
--Add real images and style from Pressed.com to give it a better look
-
--Add About component
-
--Add 404 component
-
 -Create Footer component
 
 -Create Item Folder, (Item name) component: This is for when a user click on the Item it will go to a complete description of the item

@@ -11,6 +11,7 @@ import { AppProvider } from "./Components/Shop/ShopContext";
 import ShopItems from "./Components/Items/ShopItems";
 import Success from "./Components/Checkout/Success";
 import Canceled from "./Components/Checkout/Canceled"
+import NotFound from "./Components/NotFound";
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
               <Route path="/checkout" element={<Checkout />}/>
               <Route path="/paymentSuccessful" element={<Success />} />
               <Route path="/paymentCanceled" element={<Canceled />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
         </AppProvider>
     </div>

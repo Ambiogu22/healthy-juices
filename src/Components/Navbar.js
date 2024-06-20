@@ -28,23 +28,20 @@ const Navbar = () => {
         <>
             <div className="flex justify-around items-stretch py-20 shadow-[0px_-2px_20px_0px] shadow-[#000] w-screen text-5xl sticky top-0 z-50 bg-[#FFF]">
                 <div className="flex list-none">
-                        <li className="lg:hidden"><FontAwesomeIcon icon={faBarsStaggered} onClick={navBarToggle}/></li>
+                    <li className="lg:hidden"><FontAwesomeIcon icon={faBarsStaggered} onClick={navBarToggle}/></li>
                 </div>
                 {!isOpen &&
                     <div>
                         <h3 className="font-semibold">LOGO</h3>
                     </div>
                 }
-                {isOpen && <div>
-                    <ul className="flex justify-around font-semibold">
-                        <div className="flex gap-24">
-                            <li><Link to="/" onClick={navBarToggle}>Home</Link></li>
-                            <li><Link to="/shop" onClick={navBarToggle}>Shop</Link></li>
-                            <li><Link to="/about" onClick={navBarToggle}>About</Link></li>
-                        </div>
-                    </ul>
-                </div>}
-                {!isOpen &&
+                {isOpen &&
+                    <div className="flex gap-24 font-semibold">
+                            <Link to="/" onClick={navBarToggle}>Home</Link>
+                            <Link to="/shop" onClick={navBarToggle}>Shop</Link>
+                            {/* <li><Link to="/about" onClick={navBarToggle}>About</Link></li> */}
+                    </div>
+                }
                 <ul>
                     <div className="relative">
                         {itemsInCart >= 1 &&
@@ -53,7 +50,6 @@ const Navbar = () => {
                         <li><Link to="/cart" onClick={shoppingCartToggle}><FontAwesomeIcon icon={faCartShopping}/></Link></li>
                     </div>
                 </ul>
-                }
             </div>  
         </>
     )
