@@ -27,7 +27,7 @@ const Checkout = () => {
                         <ShippingForm />
                         <ItemsDetails />
                         <button className="mb-16 text-4xl font-semibold bg-[#000] text-[#FFF]  py-[20px] px-[50px] rounded-2xl"><Link to="/shop">Shop more items</Link></button>
-                        <button className="mb-16 text-4xl font-semibold bg-[#000] text-[#FFF]  py-[20px] px-[50px] rounded-2xl"><Link to="/">Place Order</Link></button>
+                        <button className="mb-16 text-4xl font-semibold bg-[#000] text-[#FFF]  py-[20px] px-[50px] rounded-2xl"><Link to="/paymentSuccessful">Place Order</Link></button>
                         </div>
                     :
                     <div className="flex flex-col gap-24 items-center">

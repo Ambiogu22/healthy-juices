@@ -9,6 +9,8 @@ import Navbar from "./Components/Navbar";
 import Checkout from "./Components/Checkout/Checkout";
 import { AppProvider } from "./Components/Shop/ShopContext";
 import ShopItems from "./Components/Items/ShopItems";
+import Success from "./Components/Checkout/Success";
+import Canceled from "./Components/Checkout/Canceled"
 
 export default function App() {
   return (
@@ -22,6 +24,8 @@ export default function App() {
               <Route path="/about" element={<About />}/>
               <Route path="/cart" element={<Cart />}/>
               <Route path="/checkout" element={<Checkout />}/>
+              <Route path="/paymentSuccessful" element={<Success />} />
+              <Route path="/paymentCanceled" element={<Canceled />} />
             </Routes>
         </AppProvider>
     </div>
