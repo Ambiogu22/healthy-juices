@@ -9,9 +9,9 @@ tutoral and see how he does it) https://pressed.com/products/kale-apple-lemon-ju
 -Create new items: "Packs" (5 days pack, 7 day pack?)
 Make packs cheaper than single item?
 
--Add real images and style from Pressed.com to give it a better look
+-Create a filter btn which show options: Single items, Packs, etc
 
--Shop.js: ItemInCart true ? Can change qty of item on cart from shop or remove, just like you can do it on the cart : ADD TO cart
+-Add real images and style from Pressed.com to give it a better look
 
 -Add About component
 

@@ -9,6 +9,8 @@ const ItemCard = (props) => {
 
     const cart = useContext(CartContext);
 
+    const productQty = cart.getItemQty(item.id)
+
     return (
         <>
             <div className="relative flex flex-col gap-8 items-center bg-[#F9F7F1] rounded-2xl py-16 px-16">
@@ -24,9 +26,18 @@ const ItemCard = (props) => {
                         <h2 className="text-4xl text-[#6B6B6B]">Week</h2>
                     </div>
                 </Link>
-                <div className="flex justify-center items-center">
-                    <button className="text-3xl font-semibold py-4 px-6 border-2 border-[#000] rounded-full" onClick={()=> {cart.addItem(item.id)}}>ADD TO CART</button>
-                </div>  
+                {productQty > 0 
+                    ?
+                    <div className="flex justify-center items-center">
+                        <button className="text-4xl font-semibold py-4 px-8 border-2 border-[#000] rounded-l-full" onClick={()=> {cart.subtractItem(item.id)}}>-</button>
+                        <h2 className="text-4xl font-semibold py-4 px-8 border-2 border-[#000]">{productQty}</h2>
+                        <button className="text-4xl font-semibold py-4 px-8 border-2 border-[#000] rounded-r-full" onClick={()=> {cart.addItem(item.id)}}>+</button>
+                    </div>
+                    :
+                    <div className="flex justify-center items-center">
+                        <button className="text-3xl font-semibold py-4 px-8 border-2 border-[#000] rounded-full" onClick={()=> {cart.addItem(item.id)}}>ADD TO CART</button>
+                    </div> 
+                }
             </div>  
         </>
     )

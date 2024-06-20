@@ -11,7 +11,7 @@ const Items = (props) => {
                         <h2 className="text-7xl font-semibold text-[#555555] font-mono text-center">{props.juiceName}</h2>
                         <p className="text-[36px] items-start font-semibold">{props.juiceDescription}</p>
                     </div>
-                    <div className="flex flex-col items-center justify-center">
+                    <div className="flex flex-col justify-center">
                         <h2 className="text-[42px] font-semibold">${props.price}</h2>
                         <h2 className="text-[42px] font-semibold">Each</h2>
                     </div>
