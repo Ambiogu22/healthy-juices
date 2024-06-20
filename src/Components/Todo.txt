@@ -1,4 +1,4 @@
--Create Footer component
+-Finish the Footer
 
 -Create Item Folder, (Item name) component: This is for when a user click on the Item it will go to a complete description of the item
 containing all information, benefits, ingridients, etc. (LOOK AT THE URL, Item name at the end of url, you want it? Go and watch the Video 
