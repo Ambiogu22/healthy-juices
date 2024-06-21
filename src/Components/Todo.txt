@@ -1,3 +1,5 @@
+-Start working with responsive design, look for measurements
+
 -Finish the Footer
 
 -Create Item Folder, (Item name) component: This is for when a user click on the Item it will go to a complete description of the item

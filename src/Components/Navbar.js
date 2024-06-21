@@ -26,17 +26,17 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="flex justify-around items-stretch py-20 shadow-[0px_-2px_20px_0px] shadow-[#000] w-screen text-5xl sticky top-0 z-50 bg-[#FFF]">
+            <div className="flex justify-around items-stretch py-20 sm:py-12 shadow-[0px_-2px_20px_0px] shadow-[#000] w-screen text-5xl sm:text-4xl sticky top-0 z-50 bg-[#FFF]">
                 <div className="flex list-none">
                     <li className="lg:hidden"><FontAwesomeIcon icon={faBarsStaggered} onClick={navBarToggle}/></li>
                 </div>
                 {!isOpen &&
                     <div>
-                        <h3 className="font-semibold">LOGO</h3>
+                        <Link to="/"><h3 className="font-semibold">LOGO</h3></Link>
                     </div>
                 }
                 {isOpen &&
-                    <div className="flex gap-24 font-semibold">
+                    <div className="flex gap-24 sm:gap-40 font-semibold">
                             <Link to="/" onClick={navBarToggle}>Home</Link>
                             <Link to="/shop" onClick={navBarToggle}>Shop</Link>
                             {/* <li><Link to="/about" onClick={navBarToggle}>About</Link></li> */}
@@ -45,7 +45,7 @@ const Navbar = () => {
                 <ul>
                     <div className="relative">
                         {itemsInCart >= 1 &&
-                            <h2 className="absolute text-[#FFF] bg-[#B01818] rounded-full text-[30px] px-[14px] py-[6px] font-bold right-[-20px] top-[-20px]">{itemsInCart}</h2>
+                            <h2 className="absolute text-[#FFF] bg-[#B01818] rounded-full text-[30px] sm:text-[22px] px-[14px] sm:px-[12px] py-[6px] sm:py-[0px] font-bold right-[-20px] top-[-20px]">{itemsInCart}</h2>
                         }
                         <li><Link to="/cart" onClick={shoppingCartToggle}><FontAwesomeIcon icon={faCartShopping}/></Link></li>
                     </div>
