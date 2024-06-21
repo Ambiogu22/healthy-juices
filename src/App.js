@@ -26,8 +26,8 @@ export default function App() {
               <Route path="/about" element={<About />}/>
               <Route path="/cart" element={<Cart />}/>
               <Route path="/checkout" element={<Checkout />}/>
-              <Route path="/paymentSuccessful" element={<Success />} />
-              <Route path="/paymentCanceled" element={<Canceled />} />
+              <Route path="/payment-successful" element={<Success />} />
+              <Route path="/payment-canceled" element={<Canceled />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />

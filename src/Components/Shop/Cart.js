@@ -17,15 +17,15 @@ const Cart = () => {
     return (
         <div className="flex flex-col px-16 min-h-full">
             <div className="flex flex-col gap-6 mb-32">
-                <h2 className="mt-32 text-7xl sm:text-5xl font-semibold">Shopping Cart</h2>
+                <h2 className="mt-32 text-7xl font-semibold">Shopping Cart</h2>
                 {itemsInCart.length >= 1 &&
-                    <h2 className="text-5xl sm:text-4xl">Subtotal ({cart.getTotalItems()} Items): ${totalCost}</h2>
+                    <h2 className="text-5xl">Subtotal ({cart.getTotalItems()} Items): ${totalCost}</h2>
                 }
                 </div>
             <div className="flex flex-col gap-12 items-center">
                 {itemsInCart.length >= 1 ?
                     <>
-                        <button className="mb-16 text-4xl sm:text-3xl font-semibold bg-[#000] text-[#FFF] py-[20px] sm:py-[14px] px-[50px] sm:px-[30px] rounded-2xl"><Link to="/shop">Shop more items</Link></button>
+                        <button className="mb-16 text-4xl font-semibold bg-[#000] text-[#FFF] py-[20px] px-[50px] rounded-2xl"><Link to="/shop">Shop more items</Link></button>
                         <div className="relative flex flex-col gap-20 justify-center mb-[380px]">
                             {
                             itemsInCart.map((item, idx)=>(
@@ -35,14 +35,14 @@ const Cart = () => {
                                 ))
                             }
                         </div>
-                        <div className="bg-[#FFF] shadow-[0px_-2px_20px_0px] shadow-[#000] w-screen bottom-0 p-24 sm:p-10 flex justify-center fixed ">
-                            <button className="text-4xl sm:text-2xl font-semibold bg-[#000] text-[#FFF] py-[30px] sm:py-[15px] px-[50px] sm:px-[40px] rounded-2xl"><Link to="/checkout">Proceed to checkout</Link></button>
+                        <div className="bg-[#FFF] shadow-[0px_-2px_20px_0px] shadow-[#000] w-screen bottom-0 p-24 flex justify-center fixed ">
+                            <button className="text-4xl font-semibold bg-[#000] text-[#FFF] py-[30px] px-[50px] rounded-2xl"><Link to="/checkout">Proceed to checkout</Link></button>
                         </div>
                     </>
                 :
-                <div className="flex flex-col gap-24 sm:gap-16 items-center">
-                    <h2 className="text-7xl sm:text-6xl">Your Cart Is Empty</h2>
-                    <button className="text-4xl sm:text-3xl font-semibold bg-[#000] text-[#FFF] py-[20px] px-[50px] sm:py-[14px] sm:px-[30px] rounded-2xl"><Link to="/shop">SHOP</Link></button>
+                <div className="flex flex-col gap-24 items-center">
+                    <h2 className="text-7xl">Your Cart Is Empty</h2>
+                    <button className="text-4xl font-semibold bg-[#000] text-[#FFF] py-[20px] px-[50px] rounded-2xl"><Link to="/shop">SHOP</Link></button>
                 </div>}
             </div>
         </div>
